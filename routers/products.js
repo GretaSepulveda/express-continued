@@ -1,6 +1,6 @@
 const express = require('express')
 const router = express.Router()
-const ProductsController = require('../Controllers/products')
+const ProductsController = require('../controllers/products')
 
 router.get('/products', ProductsController.list)
 router.get('/products/:id', ProductsController.show)
